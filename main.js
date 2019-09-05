@@ -5,11 +5,10 @@ const botd = require('./lib/bot.js')
 const schedule = require('./lib/schedule.js')
 const fs = require('fs')
 //Initialize database
-db.init()
+db.init(__dirname+"/db.db")
 
 // Schedule All Entry from database to cron
 schedule.initCronDb()
-
 // Initialize Telegram Bot
 botd.init(fs.readFileSync('token.txt','utf8').trim())
 

@@ -1,6 +1,6 @@
 {
   "name": "html-subscribe",
-  "version": "1",
+  "version": "0.0.1",
   "description": "Telegram bot that notify you when element structure change in specific webpage",
   "main": "main.js",
   "scripts": {
